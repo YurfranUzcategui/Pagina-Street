@@ -1,0 +1,54 @@
+.fondo {
+    background-color: rgb(221, 221, 221);
+}
+
+.centrado {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.centrado-galeria {
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagen {
+    height: 50%;
+    width: 100%;
+}
+
+.formulario {
+    margin-top: 30px;
+}
+
+.margenA {
+    margin-top: 10%;
+}
+
+.colorl {
+    color: rgb(0, 0, 0);
+}
+
+.etiqueta {
+    font-size: 30px;
+    color:rgb(34, 30, 36)
+}
+
+.tarjeta{
+    height: 600px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.boton-tarjeta{
+WIDTH: 95%;
+position: absolute;
+bottom: 10PX;
+transform: translateX(-50%);
+}
+
+.imagen-tarjeta{
+    height: 150px;
+}
+
+
