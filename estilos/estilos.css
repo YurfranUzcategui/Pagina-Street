@@ -1,12 +1,27 @@
+body{
+    background-color: rgb(56, 55, 55);
+}
+
 .fondo {
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(0, 0, 0) !important;
 }
 
 .centrado {
     max-width: 50%;
     margin-left: auto;
     margin-right: auto;
+    
+    margin-top: 5%;
 }
+
+.centrado1 {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+
+}
+
 .centrado-galeria {
     max-width: 100%;
     margin-left: auto;
@@ -23,11 +38,11 @@
 }
 
 .margenA {
-    margin-top: 10%;
+    margin-top: 50px;
 }
 
 .colorl {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255) !important;
 }
 
 .etiqueta {
@@ -36,6 +51,7 @@
 }
 
 .tarjeta{
+    margin: 50px;
     height: 600px;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
@@ -48,7 +64,16 @@ transform: translateX(-50%);
 }
 
 .imagen-tarjeta{
-    height: 150px;
+    height: 150px;
+    width: 100px;
+}
+.isesion{
+    margin: 20%;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background: rgba(130, 129, 129, 0.518);
 }
 
-
+.separacion{
+    margin: 20px;
+}

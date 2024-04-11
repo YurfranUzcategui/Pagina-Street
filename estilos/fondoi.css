@@ -1,0 +1,54 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: bordex-box;
+}
+
+.contenedor{
+    background-image: url(https://c0.wallpaperflare.com/preview/322/163/723/australia-city-of-perth-hype-assc.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    align-content: center;
+}
+
+.contenedor1{
+    background-image: url(https://c0.wallpaperflare.com/preview/81/431/719/seoul-south-korea-alley-streetwear.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    align-content: center;
+}
+
+.ttlo{
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: rgb(206, 199, 199);
+    margin-left: 20px;
+}
+
+.texto{
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: white;
+    margin-left: 20px;
+}
+
+.boton{
+    display: inline-block;
+    padding: 7px 0;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    width: 110px;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    background: rgb(0, 0, 0);
+    margin-left: 20px;
+}
+
