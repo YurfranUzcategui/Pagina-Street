@@ -60,3 +60,39 @@ $('#btn_ingresar').click(function(){
     })
 
 })
+
+$(document).ready(function() {
+    $('#btn_crearUsuario').click(function(){
+        let codigo = $('#txt_nuevoCodigo').val()
+        let nombre = $('#txt_nuevoNombre').val()
+        let descripcion = $('#txt_nuevoDescripcion').val()
+        let precio = $('#txt_nuevoPrecio').val()
+        let mail = $('#txt_nuevoCorreo').val()
+
+        let url = "https://programadormaldito.cl/route/usuario_almacenar"
+
+        let datos = {
+            codigo: codigo,
+            nombre: nombre,
+            descripcion: descripcion,
+            precio: precio,
+            mail: mail
+        }
+
+        $.ajax({
+            url: url,
+            type: "POST",
+            contentType: "application/json",
+            data: JSON.stringify(datos),
+
+            success: function(response){
+                if(response[0].RESPUESTA == "0") {
+                    alert('Producto ya existe')
+                }else{
+                    alert('Producto Creado')
+                }
+            }
+        })
+
+    })
+})
