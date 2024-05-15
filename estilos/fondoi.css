@@ -84,6 +84,11 @@
     margin-top: 20px;
 }
 
+.containerr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .estilo-div {
     background-color: rgb(255, 255, 255);
@@ -92,11 +97,4 @@
     margin: 10px;
     width:400px; 
     height: auto;
-}
-
-.containerr {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
 }
