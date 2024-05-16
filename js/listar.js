@@ -13,15 +13,13 @@ $(document).ready(function() {
                 console.log(productos);
                 productos.forEach(function(producto) { 
                     let productoHTML = `<br>
-                                    <div>
-                                        <ul>
-                                            <li class="estilo-div">Código: ${producto.p_codigo}</li>
-                                            <li class="estilo-div">Nombre: ${producto.p_nombre}</li>
-                                            <li class="estilo-div">Descripcion: ${producto.p_descripcion}</li>
-                                            <li class="estilo-div">Precio: ${producto.p_precio}</li>
-                                            <li class="estilo-div">Usuario: ${producto.p_mail_creado}</li>
-                                        </ul>
-                                    </div>
+                                            <div class="card producto contenedor3">
+                                                <h4>Código: ${producto.p_codigo}</h4>
+                                                <p>Nombre: ${producto.p_nombre}</p>
+                                                <p>Descripcion: ${producto.p_descripcion}</p>
+                                                <p>Precio: ${producto.p_precio}</p>
+                                                <p>Usuario: ${producto.p_mail_creado}</p>
+                                            </div>
                                     <br>`;
                     $('#ls_productos').append(productoHTML)
                 });
@@ -45,15 +43,13 @@ $(document).ready(function() {
             if(productos.length > 0) {
                 console.log(productos);
                 productos.forEach(function(producto) { 
-                    let productoHTML = `<br>
-                                            <div>
-                                                <ul>
-                                                    <li class="estilo-div">Código: ${producto.p_codigo}</li>
-                                                    <li class="estilo-div">Nombre: ${producto.p_nombre}</li>
-                                                    <li class="estilo-div">Descripcion: ${producto.p_descripcion}</li>
-                                                    <li class="estilo-div">Precio: ${producto.p_precio}</li>
-                                                    <li class="estilo-div">Usuario: ${producto.p_mail_creado}</li>
-                                                </ul>
+                    let productoHTML = `<br> 
+                                            <div class="card producto contenedor3">
+                                                <h4>Código: ${producto.p_codigo}</h4>
+                                                <p>Nombre: ${producto.p_nombre}</p>
+                                                <p>Descripcion: ${producto.p_descripcion}</p>
+                                                <p>Precio: ${producto.p_precio}</p>
+                                                <p>Usuario: ${producto.p_mail_creado}</p>
                                             </div>
                                     <br>`;
                     $('#ls_todo').append(productoHTML)

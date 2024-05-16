@@ -81,10 +81,13 @@ $('#btn_ingresar').click(function(){
                 $('#txt_pass').val(''); 
                 
             }else if(mail == 'streetay@gmail.com' & pass == '12345') {
+                $('#btn_iniciar').hide()
                 window.location.href = "almacenarProducto.html"
-                localStorage.setItem('mail', mail); 
+                localStorage.setItem('mail', mail);
             }else{
+                $('#btn_iniciar').hide()
                 window.location.href = "index.html";
+                localStorage.setItem('mail', mail); 
             }
         }
     })

@@ -17,7 +17,7 @@
             <a class="navbar-brand" href="index.html">StreetA&Y</a>
             <ul class="nav justify-content-end">
                 <li class="nav-item">
-                    <a class="nav-link active colorl" aria-current="page" href="IniciarSesion.html">Iniciar sesion</a>
+                    <a id="btn_listar" class="boton" aria-current="page" href="buscador.html">Productos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link colorl" href="carrito.html">Carrito</a>
@@ -31,13 +31,20 @@
                         <li><a class="dropdown-item" href="chaquetas.html">Chaquetas</a></li>
                     </ul>
                 </li>
+                <li class="nav-item">
+                    <a id="btn_iniciar" class="nav-link active colorl" aria-current="page" href="IniciarSesion.html">Iniciar sesion</a>
+                </li>
+                <li class="nav-item">
+                    <a id="btn_cerrar" class="boton" aria-current="page" href="#">Cerrar Sesión</a>
+                </li>
+            </ul>
         </div>
     </nav>
     <div class="contenedor2">
-    <h1 class="titulo titulo-centrado mb-5">Búsqueda de productos</h1>
+        <h1 class="titulo titulo-centrado mb-5">Listado de productos</h1>
         <div class="center">
             <div>
-            <button id="btn_lsCorreo" class="btn btn-outline-dark boton mt-5">listar por Correo</button>
+            <button id="btn_lsCorreo" class="btn btn-outline-dark boton mt-5">Listar por Correo</button>
             </div>
             <div>
             <button id="btn_lsTodo" class="btn btn-outline-dark boton mt-5">Listar todo</button>
@@ -45,13 +52,12 @@
         </div>
     </div>
 
-    <div id="ls_productos" class="containerr"></div>
-    <div id="ls_todo" class="containerr"></div>
+    <div id="ls_productos"></div>
+    <div id="ls_todo"></div>
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="js/listar.js"></script>
+    
     <br>
     <footer>
         <div class="social-buttons">
@@ -66,5 +72,8 @@
             </a>
         </div>  
     </footer> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/listar.js"></script>
+<script src="js/btnsesion.js"></script>
 </body>
 </html>

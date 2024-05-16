@@ -10,7 +10,7 @@
     
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    
+
     <link rel="stylesheet" href="estilos/estilos.css">
     <link rel="stylesheet" href="estilos/socialmedia.css">
     <link rel="stylesheet" href="estilos/fondoi.css">
@@ -21,7 +21,7 @@
             <a class="navbar-brand" href="index.html">StreetA&Y</a>
             <ul class="nav justify-content-end">
                 <li class="nav-item">
-                    <a class="nav-link active colorl" aria-current="page" href="IniciarSesion.html">Iniciar sesion</a>
+                    <a id="btn_listar" class="boton" aria-current="page" href="buscador.html">Productos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link colorl" href="carrito.html">Carrito</a>
@@ -35,6 +35,13 @@
                         <li><a class="dropdown-item" href="chaquetas.html">Chaquetas</a></li>
                     </ul>
                 </li>
+                <li class="nav-item">
+                    <a id="btn_iniciar" class="nav-link active colorl" aria-current="page" href="IniciarSesion.html">Iniciar sesion</a>
+                </li>
+                <li class="nav-item">
+                    <a id="btn_cerrar" class="boton" aria-current="page" href="#">Cerrar Sesión</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
@@ -62,21 +69,12 @@
 
 
         <button id="btn_ingresarProducto"  class="btn btn-outline-dark boton mt-2">Crear Producto</button>
-        <a href="buscador.html" target="_blank">
-            <button class="btn btn-outline-dark boton mt-2"> 
-                buscador
-            </button>
-        </a>
+        
 
     </div>
 
 
 
-<!--JQUERY-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-<!--JS-->
-<script src="js/funciones.js"></script>
     <br>
     
     <footer>
@@ -92,7 +90,11 @@
             </a>
         </div>  
     </footer> 
-    
+<!--JQUERY-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!--JS-->
+<script src="js/funciones.js"></script>
+<script src="js/btnsesion.js"></script>
 
 </body>
 </html>
